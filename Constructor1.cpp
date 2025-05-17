@@ -6,16 +6,7 @@ class buku
 string judul;
 
 public:
-    buku setJudul(string judul)
-    {
-    this->judul = judul;
-    return *this; //chain function
-    }
-    string getjudul()
-    {
-        return this->judul;
-    }
-}bukunya;
+ 
 
 int main()
 {
@@ -159,5 +150,16 @@ void mahasiswa::PrintAll(){
 cout << endl;
 }
 int main (){
-    mahasiswa
+mahasiswa  mhs1("Sri Dadi");
+ mahasiswa mhs2("Budi Jatmiko");
+ mahasiswa::setNim(9); //mengakses nim melalui static member function "setNim"
+ mahasiswa mhs3("Andi Janu");
+ mahasiswa mhs4("Joko Wahono");
+
+ mhs1.printAll();
+ mhs2.printAll();
+ mhs3.printAll();
+ mhs4.printAll();
+ cout<<"akses dari luar object = "<<mahasiswa::getNim()<<endl; //mengakses nim melalui static member function "getNim"
+ return 0;
 }
