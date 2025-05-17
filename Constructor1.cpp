@@ -76,3 +76,8 @@ int main(){
 }// destructor dipanggil
 
 //KONSTRUKTOR
+#include <iostream>
+#include <string>
+using namespace std;
+
+class mahasiswa{}
