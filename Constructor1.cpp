@@ -31,5 +31,8 @@ using namespace std;
 
 class angka{
     private:
-    int *
+    int *arr;
+    int panjang;
+    public:
+    
 }
