@@ -34,5 +34,43 @@ class angka{
     int *arr;
     int panjang;
     public:
+    angka(int);//constructor
+    ~angka();//destructor
+    void CetakData();
+    void isiData();
+};
+//definisi member functon
+angka::angka(int i){//constructor
+    panjang = i;
+    arr = new int[i];
+    isiData();
+}
+
+angka::angka(){//destructor
+    cout<<endl;
+    CetakData();
+    delete[]arr;
+    cout<<"Alamat array sudah dilepaskan"<<endl;
+}
+
+void angka::CetakData(){
+    for (int i = 1; i <= Panjang; i++)
+    {
+        cout<<i<<"="<<arr[i],,endl;
+    }
     
 }
+
+void angka:: isiData(){
+    for(int i=1;i<=panjang;i++){
+        cout<<i<<"=";cin>>arr[i];
+    }
+    cout<<endl;
+}
+int main(){
+    angka belajarcpp(3);
+    angka*ptrBelajarCpp = new angka(5);
+    delete ptrBelajarCpp;
+
+    return 0;
+}// destructor dipanggil
