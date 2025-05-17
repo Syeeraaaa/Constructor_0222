@@ -141,4 +141,7 @@ class mahasiswa{
 
     void setID();
     void PrintAll();
+
+    static void setNim(int pNim){nim=pNim; /*DEFINISI FUNCTION*/}
+    static int getNim(){return nim; /*definisi function*/}
 }
