@@ -128,3 +128,10 @@ int main(){
 }
 
 //mbrstatikfunc
+#include <iostream>
+#include <string>
+using namespace std;
+
+class mahasiswa{
+    
+}
