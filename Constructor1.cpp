@@ -1,3 +1,4 @@
+//CHAINFUNCTION
 #include <iostream>
 using namespace std;
 class buku
@@ -18,5 +19,10 @@ public:
 
 int main()
 {
-    
+ // bukunya.setJudul("Matematika");
+ //cout << bukunya.getJudul();
+ cout << bukunya.setJudul("Matematika").getjudul();
+ return 0;
 }
+
+//DESTRUKTOR
